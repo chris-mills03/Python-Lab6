@@ -7,7 +7,11 @@
             "Bash(git status)",
             "Bash(git diff:*)", 
             "Bash(git log:*)",
-            "Edit(password.py)"
+            "Edit(password.py)",
+            "Bash(uvx ruff check:*)",
+            "Bash(uvx ruff format --check:*)",
+            "Bash(uvx pytest:*)",
+            "Bash(uvx pre-commit run:*)"
         ],
         "ask": [
             "Bash(git add:*)",
