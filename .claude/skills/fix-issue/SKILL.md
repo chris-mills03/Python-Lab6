@@ -1,6 +1,6 @@
 ---
 name: fix-issue
-description: "Fix a TheAlgorithms/Python issue described in CLAUD.md inside this fork and open the PR in the fork, following CONTRIBUTING.md and AGENTS.md. Use when asked to fix, resolve, or contribute to an issue number."
+description: Fix the issue described in CLAUDE.md, following CONTRIBUTING.md and AGENTS.md. Use when asked to fix or work on the issue.
 ---
 
 # Fix the issue
