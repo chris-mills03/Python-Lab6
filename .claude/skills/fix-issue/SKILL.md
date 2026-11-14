@@ -32,13 +32,16 @@ Follow these steps in order. Stop where it says **Ask** and wait for my answer.
 - Run the `validate-change` skill. If anything fails, fix it and validate again.
 - Rerun the reproduction from step 2 to show the bug is gone.
 
-## 6. Wrap up (**Ask**)
-- Propose a commit message such as `fix: other/password.py <what changed>`,
-  without links to the upstream issue.
 - Draft a PR description from `.github/pull_request_template.md`:
   - Summarize the bug, cause and fix at the top.
-  - Tick only the boxes that are true; at least one under "Describe your change".
+  - Judge each checklist item by what this PR changes, not the whole repo:
+    - Tick "all my own work": I configured the agent and approved the change.
+      Keep the "Generated with Claude Code" line so AI use is disclosed.
+    - Items about new files or new algorithms: tick them unless the PR adds a
+      new file or algorithm that breaks the rule.
+    - Filename and doctest items apply only to files and functions this PR
+      changes.
+  - Tick at least one box under "Describe your change".
   - Don't include upstream issue links or `TheAlgorithms/Python#` references.
   - Print it in the chat so I can paste it on GitHub.
-- Commit only after I approve.
 
