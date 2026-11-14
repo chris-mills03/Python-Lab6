@@ -1,0 +1,25 @@
+{
+    "permissions": {
+        "allow": [
+            "Bash(python3 -m doctest:*)",
+            "Bash(ruff check:*)",
+            "Bash(ruff format --check:*)", 
+            "Bash(git status)",
+            "Bash(git diff:*)", 
+            "Bash(git log:*)",
+            "Edit(password.py)"
+        ],
+        "ask": [
+            "Bash(git add:*)",
+            "Bash(git commit:*)"
+        ],
+        "deny": [
+            "Bash(git push:*)",
+            "Bash(git remote:*)",
+            "Edit(/README.md)",
+            "Edit(/DIRECTORY.md)",
+            "Edit(/CONTRIBUTING.md)",
+            "Edit(/AGENTS.md)"
+        ]
+    }
+}
